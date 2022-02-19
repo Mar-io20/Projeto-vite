@@ -1,13 +1,19 @@
-import { useState } from 'react'
+
 import './App.css'
+import { BrowserRouter } from 'react-router-dom'
+
+import { Register } from './App/Pages/Register'
+import { Task } from './App/Pages/Lista'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <h1>Ola mundos</h1>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Register />
+      </div>
+    </BrowserRouter>
   )
 }
 
